@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#nav{
+    width: 100%;
+    height: 14vh;
+    background-color: rgba(163, 157, 157,0.3);
+    float: left;
+    position: fixed;
+    z-index: 2222;
+}
+#nav h1{
+    color: white;
+    margin-top: 4vh;
+    margin-left: 4vh;
+    display: block;
+    float: left;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    border: 1px solid #333;
+    position: relative;
+    padding: 7px 8px;
+    border-radius: 5px;
+    margin-top: 3vh;
+    margin-right: 5vh;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+#background{
+    width: 100%;
+    float: left;
+    background-color: grey;
+    height: 100vh;
+    background-image: url(./images/about.jpg);
+    background-repeat: no-repeat;
+    background-position:  center;
+    position: relative;
+}
+.background-overlay{
+    position: absolute;
+    text-align: center;
+    margin-top: 38vh;
+    margin-left: 20%;
+}
+.background-overlay h1{
+    font-size: 70px;
+    font-weight: lighter;
+}
+.background-overlay h3{
+    font-size: 30px;
+    font-weight: lighter;
+    
+}
+
+#imgdiv{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 95%;
+    position:fixed;
+    border: 1px solid red;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    border-bottom-left-radius:37px;
+    margin-top: 37%;
+    background-color: rgba(49, 49, 49, 0.3);
+    z-index: 20000;
+    display: block;
+}
+
+
+.grids{
+    background-color: black;
+    border:none;
+    width: 33.3%;
+    height: 60vh;
+    float: left;
+    position: relative;
+
+}
+
+.grids img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slider-overlay{
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    background:transparent;
+    position: absolute;
+    overflow: hidden;
+    color: white;
+    margin-top: 56vh;
+    margin-left: 3vh;
+    transition-property: margin-top;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+    
+}
+.slider-overlay:hover{
+    margin-top: 50vh;
+}
+
+#footer{
+    position: sticky;
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(49, 49, 49);
+    float: left;
+    text-align: center;
+    
+
+}
+
+#footer p{
+    margin-top: 5vh;
+    color: white;
+}
+
+@media screen and (max-width: 1130px){
+
+    
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    #background{
+        width: 100%;
+        min-height: 255px;
+    }
+    .background-overlay{
+        position: absolute;
+        text-align: center;
+        margin-top: 38vh;
+        margin-left: 10%;
+    }
+    .background-overlay h1{
+        font-size: 60px;
+        font-weight: lighter;
+    }
+    .background-overlay h3{
+        font-size: 25px;
+        font-weight: lighter;
+        
+    }
+
+    .grids{
+        width: 50%;
+        min-height: 255px;
+    }
+    #footer{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:768px){
+    #background{
+        width: 100%;
+        min-height: 255px;
+    }
+    .background-overlay{
+        position: absolute;
+        text-align: center;
+        margin-top: 38vh;
+        margin-left: 8%;
+    }
+    .background-overlay h1{
+        font-size: 50px;
+        font-weight: lighter;
+    }
+    .background-overlay h3{
+        font-size: 15px;
+        font-weight: lighter;
+        
+    }
+
+    .grids{
+        width: 100%;
+        min-height: 255px;
+    }
+    #footer{
+        width: 100%;
+        
+    }
+}
